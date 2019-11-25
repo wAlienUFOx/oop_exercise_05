@@ -43,7 +43,6 @@ namespace containers {
         void delete_by_number(size_t N);
         void insert_by_it(forward_iterator ins_it, T& value);
         void insert_by_number(size_t N, T& value);
-        stack& operator=(stack& other);
     private:
         struct element {
             T value;
@@ -90,12 +89,6 @@ namespace containers {
             throw std::logic_error ("stack is empty");
         }
         return first->value;
-    }
-
-    template<class T>
-    stack<T>& stack<T>::operator=(stack<T>& other){
-        size = other.size;
-        first = std::move(other.first);
     }
 
     template<class T>
