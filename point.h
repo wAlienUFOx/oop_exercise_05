@@ -2,9 +2,6 @@
 #define OOP_LAB5_POINT_H
 
 #include <iostream>
-#include <type_traits>
-#include <cmath>
-
 
 template<class T>
 struct point {

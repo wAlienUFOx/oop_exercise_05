@@ -2,6 +2,7 @@
 #define OOP_LAB5_RECTANGLE_H
 
 #include "point.h"
+#include <cmath>
 
 template <class T>
 class Rectangle {
